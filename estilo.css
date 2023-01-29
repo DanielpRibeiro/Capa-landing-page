@@ -1,0 +1,112 @@
+body{
+    font-family:Helvetica, sans-serif;
+    background-color: rgb(29, 29, 29);
+    width: 1320px;
+    margin: 0 auto;
+    color: white;
+}
+
+header{
+    
+    /* Os dois elementos na mesma linha do bloco */
+    display: flex;
+    /* Separando os elementos cada um para um lado */
+    justify-content: space-between;
+    /* Heigth ao centro do bloco */
+    align-items: center;
+    padding-top: 15px;
+}
+
+.logo{
+    
+    flex-direction: column;
+    /* Diminuindo altura entre as linhas */
+    line-height: 10px;
+    
+    
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: rgb(182, 0, 255);
+    transition: 0.4s all;
+}
+
+#botao{
+    border: 1px solid rgb(182, 0, 255);
+    border-radius: 10px;
+    padding: 8px;
+}
+
+/* diminuindo expessura da letra */
+h1{
+    font-weight: 100;
+}
+
+/* ********************* capa*********************** */
+
+main{
+    display: flex;
+    height: 780px;
+    align-items: center;
+}
+.esquerda{
+    
+    width: 50%;
+    padding-bottom: 50px;
+}
+h2{
+    font-size: 70px;
+    line-height: 10px;
+}
+#destaque{
+    color: rgb(182, 0, 255);
+
+}
+.direita{
+    width: 50%;
+    
+}
+p{
+    max-width: 500px;
+    font-size: 19px;
+    
+}
+
+/* ******************* Foemulário ********************* */
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+input{
+    margin-top: 20px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 35px;
+    border: none;
+    font-size: 17px;
+}
+
+form [type="submit"]{
+    background-color:rgb(182, 0, 255);
+    height: 55px;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+
+}
